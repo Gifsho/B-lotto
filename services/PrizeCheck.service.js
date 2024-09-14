@@ -10,7 +10,7 @@ exports.checkUserPrizes = async (userId, drawDate) => {
         // แปลง drawDate ให้เป็นรูปแบบ YYYY-MM-DD
         const [year, month, day] = drawDate.split('-');
         const startDate = new Date(year, month - 1, parseInt(day));
-        const endDate = new Date(year, month - 1, parseInt(day) + 1);
+        const endDate = new Date(year, month - 1, parseInt(day) + 2);
 
         console.log('Date range:', startDate, 'to', endDate);
 
